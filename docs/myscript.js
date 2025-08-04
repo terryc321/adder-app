@@ -40,6 +40,10 @@ function add() {
 
 function undo() {
     console.log("you clicked undo")
+
+    // clear value window
+    n = document.getElementById("amount")
+    n.value = ""
     // drop
     nums.pop()
     tnums.pop()
