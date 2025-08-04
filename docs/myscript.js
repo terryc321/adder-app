@@ -85,6 +85,23 @@ function addRow(tableID , amount , total) {
 // // Call addRow() with the table's ID
 // addRow("my-table");
 
+function clearAll (){
+    var p = document.getElementById("mytable")
+    // clear out child nodes - visually
+    removeAllChildNodes(p)
+
+    // remove all 
+    nums = []
+    tnums = []
+    
+    // clear out value
+    var n = document.getElementById('amount')
+    n.value = ""
+    
+    
+}
+
+
 
 function report (){
     var p = document.getElementById("mytable")
