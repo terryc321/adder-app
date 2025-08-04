@@ -12,6 +12,18 @@
 <button type="button" onclick=add()>ADD</button>
 <input  type="number"  id="amount" default="0"/>
 
+<script>
+ // perhaps onload 
+  let node = document.getElementById("amount")
+  node.addEventListener("keyup", ({key}) => {
+    if (key === "Enter") {
+        add()
+    }
+  })
+  
+  </script>
+
+
 <!-- unordered list -->
 <!-- table -->
 
