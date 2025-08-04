@@ -21,6 +21,13 @@ function add() {
     n = document.getElementById("amount")
     // save it
     let nv = n.value
+
+    if (+nv < 1){
+	//clear 
+	n.value = ""
+	return;
+    }
+    
     nums.push(0 + +nv)
     // running total
     tnums.push(0 + lastTnums() + +nv)
